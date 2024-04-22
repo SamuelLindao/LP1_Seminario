@@ -13,6 +13,9 @@ while(cont == 0){
   scanf("\n%c", &oper);
   
 switch(oper){
+  case '*'
+    scanf("\n%f", &entsecn);
+    res = (entorig * entsecn);
   case '+':
     scanf("\n%f", &entsecn);
     res = (entorig + entsecn);
