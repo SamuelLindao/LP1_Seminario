@@ -8,10 +8,10 @@ char oper = 0, cont = 0;
 
 printf("Bem-vindo(a). Você já pode começar a fazer seus cálculos. Digite 'A' ou 'a' quando quiser encerrar o programa.\n\n");
   scanf("%f", &entorig);
-  
+
 while(cont == 0){
   scanf("\n%c", &oper);
-  
+
 switch(oper){
   case '*':
     scanf("\n%f", &entsecn);
@@ -29,7 +29,10 @@ switch(oper){
       printf("Erro: Divisão por zero.\n");
   }
   break;
-
+case '-':
+    scanf("\n%f", &entsecn);
+    res = (entorig - entsecn);
+    break;
   case 'A':
     return 0;
   break;
@@ -42,8 +45,8 @@ switch(oper){
 printf("= %.2f\n", res);
 entorig = res;
 }
-  
 
-  
+
+
 return 0;
 }
