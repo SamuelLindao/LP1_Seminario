@@ -13,12 +13,21 @@ while(cont == 0){
   scanf("\n%c", &oper);
   
 switch(oper){
-  case '*'
+  case '*':
     scanf("\n%f", &entsecn);
     res = (entorig * entsecn);
+  break;
   case '+':
     scanf("\n%f", &entsecn);
     res = (entorig + entsecn);
+  break;
+  case '/':
+    scanf("\n%f", &entsecn);
+      if (entsecn != 0) {
+      res = (entorig / entsecn);
+  } else {
+      printf("Erro: Divisão por zero.\n");
+  }
   break;
 
   case 'A':
@@ -29,10 +38,12 @@ switch(oper){
     return 0;
   break;
   }
-}
-  
+
 printf("= %.2f\n", res);
 entorig = res;
+}
+  
+
   
 return 0;
 }
