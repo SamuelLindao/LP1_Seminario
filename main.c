@@ -10,7 +10,6 @@ char oper = 0, cont = 0;
 printf("Bem-vindo(a). Você já pode começar a fazer seus cálculos. Digite 'A' ou 'a' quando quiser encerrar o programa.\n\n");
 printf("Use 'R' como operador da Função de Raiz Quadrada\n\n");
   scanf("%f", &entorig);
-  printf("Pra Alex");
 
 while(cont == 0){
   scanf("\n%c", &oper);
