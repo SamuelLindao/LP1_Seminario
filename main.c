@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
 
@@ -7,6 +8,7 @@ float res = 0;
 char oper = 0, cont = 0;
 
 printf("Bem-vindo(a). Você já pode começar a fazer seus cálculos. Digite 'A' ou 'a' quando quiser encerrar o programa.\n\n");
+printf("Use 'R' como operador da Função de Raiz Quadrada\n\n");
   scanf("%f", &entorig);
 
 while(cont == 0){
@@ -33,6 +35,9 @@ case '-':
     scanf("\n%f", &entsecn);
     res = (entorig - entsecn);
     break;
+case 'R':
+  res = sqrt(entorig);
+  break;
   case 'A':
     return 0;
   break;
